@@ -10,8 +10,6 @@
 
 @interface PTStopwatch : NSObject
 
-@property (nonatomic, assign) NSInteger seconds;
-@property (nonatomic, assign) NSInteger minutes;
 @property (nonatomic, assign, readonly) NSTimeInterval time;
 
 - (void)start;

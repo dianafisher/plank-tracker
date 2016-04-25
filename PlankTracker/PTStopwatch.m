@@ -14,6 +14,9 @@
 @property (nonatomic, assign) NSTimeInterval elapsedTime;
 @property (nonatomic, assign) NSTimeInterval totalTime;
 
+@property (nonatomic, assign) NSInteger seconds;
+@property (nonatomic, assign) NSInteger minutes;
+
 @end
 
 @implementation PTStopwatch
@@ -54,13 +57,13 @@
     }
     
     NSTimeInterval previous = self.elapsedTime;
-    NSLog(@"previous: %g", previous);
+//    NSLog(@"previous: %g", previous);
     
     self.elapsedTime = [self.startTime timeIntervalSinceNow] * -1.0;
     self.totalTime += (self.elapsedTime - previous);
     
-    NSLog(@"elapsedTime: %g", self.elapsedTime);
-    NSLog(@"totalTime: %g", self.totalTime);
+//    NSLog(@"elapsedTime: %g", self.elapsedTime);
+//    NSLog(@"totalTime: %g", self.totalTime);
     
     NSInteger minutes = (NSInteger)self.totalTime / 60;
     NSInteger seconds = (NSInteger)self.totalTime % 60;

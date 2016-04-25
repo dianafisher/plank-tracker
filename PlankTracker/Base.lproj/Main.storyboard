@@ -123,10 +123,10 @@
             </objects>
             <point key="canvasLocation" x="1562" y="-320"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Record Table View Controller-->
         <scene sceneID="YIW-yi-gRo">
             <objects>
-                <tableViewController id="uNU-6M-zLi" sceneMemberID="viewController">
+                <tableViewController id="uNU-6M-zLi" customClass="PTRecordTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="w6z-D4-xKp">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

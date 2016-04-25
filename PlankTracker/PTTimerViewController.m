@@ -15,6 +15,7 @@
 #import "PTPlankRecordStore.h"
 #import "PTPlankUtils.h"
 #import "PTButtonView.h"
+#import "PTRecordTableViewController.h"
 
 @interface PTTimerViewController ()
 
@@ -184,15 +185,25 @@ static void * contextForKVO = &contextForKVO;
 
 - (void)presentAlertControllerForTime:(NSTimeInterval)time
 {
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Save Record"
-                                                                             message:@"Do you wish to save this time in the log?"
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Save Time"
+                                                                             message:@"Save this time in the log?"
                                                                       preferredStyle:UIAlertControllerStyleAlert];
     
     UIAlertAction* saveAction = [UIAlertAction actionWithTitle:@"Save" style:UIAlertActionStyleDefault
                                                           handler:^(UIAlertAction * action) {
                                                               
                                                               // Create a record.
-                                                              [[PTPlankRecordStore sharedStore] createRecordWithDate:[NSDate date] withElapsedTime:time];
+                                                              [[PTPlankRecordStore sharedStore] createRecordWithDate:[NSDate date]
+                                                                                                     withElapsedTime:time];
+                                                              
+                                                              // Update the longest time, if needed.
+                                                              
+                                                              // Get the longest time.
+                                                              PTPlankRecord *plankRecord = [[PTPlankRecordStore sharedStore] recordWithLongestElapsedTime];
+                                                              if (plankRecord) {
+                                                                  NSString *timeStr = [PTPlankUtils stringFromElapsedTime:plankRecord.elapsedTime];
+                                                                  self.longestTimeLabel.text = [NSString stringWithFormat:@"Longest: %@", timeStr];
+                                                              }
                                                           }];
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         [self dismissViewControllerAnimated:alertController completion:nil];
@@ -230,12 +241,12 @@ static void * contextForKVO = &contextForKVO;
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-//    if (![segue.destinationViewController isKindOfClass:[RecordTableViewController class]]) {
-//        return;
-//    }
-//    
-//    RecordTableViewController *tableViewController = segue.destinationViewController;
-//    tableViewController.title = @"Plank Times";
+    if (![segue.destinationViewController isKindOfClass:[PTRecordTableViewController class]]) {
+        return;
+    }
+    
+    PTRecordTableViewController *tableViewController = segue.destinationViewController;
+    tableViewController.title = @"Plank Times";
 }
 
 
