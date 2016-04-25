@@ -1,0 +1,350 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF6D0B9C1CCD70B50001801F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6D0B9B1CCD70B50001801F /* main.m */; };
+		DF6D0B9F1CCD70B50001801F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6D0B9E1CCD70B50001801F /* AppDelegate.m */; };
+		DF6D0BA51CCD70B50001801F /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6D0BA41CCD70B50001801F /* SecondViewController.m */; };
+		DF6D0BA81CCD70B50001801F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF6D0BA61CCD70B50001801F /* Main.storyboard */; };
+		DF6D0BAA1CCD70B50001801F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF6D0BA91CCD70B50001801F /* Assets.xcassets */; };
+		DF6D0BAD1CCD70B50001801F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF6D0BAB1CCD70B50001801F /* LaunchScreen.storyboard */; };
+		DF6D0BB61CCD71390001801F /* PTTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6D0BB51CCD71390001801F /* PTTimerViewController.m */; };
+		DF6D0BB91CCD75450001801F /* PTButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6D0BB81CCD75450001801F /* PTButtonView.m */; };
+		DF6D0BBC1CCD778B0001801F /* PTStopwatch.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6D0BBB1CCD778B0001801F /* PTStopwatch.m */; };
+		DF6D0BBF1CCD78A10001801F /* PTPlankRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6D0BBE1CCD78A10001801F /* PTPlankRecord.m */; };
+		DF6D0BC21CCD79980001801F /* PTPlankRecordStore.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6D0BC11CCD79980001801F /* PTPlankRecordStore.m */; };
+		DF6D0BC51CCD7CC90001801F /* PTPlankUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6D0BC41CCD7CC90001801F /* PTPlankUtils.m */; };
+		DF6D0BC81CCD9BCD0001801F /* PTRecordTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6D0BC71CCD9BCD0001801F /* PTRecordTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DF6D0B971CCD70B50001801F /* PlankTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlankTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF6D0B9B1CCD70B50001801F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DF6D0B9D1CCD70B50001801F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DF6D0B9E1CCD70B50001801F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DF6D0BA31CCD70B50001801F /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		DF6D0BA41CCD70B50001801F /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		DF6D0BA71CCD70B50001801F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DF6D0BA91CCD70B50001801F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF6D0BAC1CCD70B50001801F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DF6D0BAE1CCD70B50001801F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF6D0BB41CCD71390001801F /* PTTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTTimerViewController.h; sourceTree = "<group>"; };
+		DF6D0BB51CCD71390001801F /* PTTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTTimerViewController.m; sourceTree = "<group>"; };
+		DF6D0BB71CCD75450001801F /* PTButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTButtonView.h; sourceTree = "<group>"; };
+		DF6D0BB81CCD75450001801F /* PTButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTButtonView.m; sourceTree = "<group>"; };
+		DF6D0BBA1CCD778B0001801F /* PTStopwatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTStopwatch.h; sourceTree = "<group>"; };
+		DF6D0BBB1CCD778B0001801F /* PTStopwatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTStopwatch.m; sourceTree = "<group>"; };
+		DF6D0BBD1CCD78A10001801F /* PTPlankRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPlankRecord.h; sourceTree = "<group>"; };
+		DF6D0BBE1CCD78A10001801F /* PTPlankRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPlankRecord.m; sourceTree = "<group>"; };
+		DF6D0BC01CCD79980001801F /* PTPlankRecordStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPlankRecordStore.h; sourceTree = "<group>"; };
+		DF6D0BC11CCD79980001801F /* PTPlankRecordStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPlankRecordStore.m; sourceTree = "<group>"; };
+		DF6D0BC31CCD7CC90001801F /* PTPlankUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPlankUtils.h; sourceTree = "<group>"; };
+		DF6D0BC41CCD7CC90001801F /* PTPlankUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPlankUtils.m; sourceTree = "<group>"; };
+		DF6D0BC61CCD9BCD0001801F /* PTRecordTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTRecordTableViewController.h; sourceTree = "<group>"; };
+		DF6D0BC71CCD9BCD0001801F /* PTRecordTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTRecordTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF6D0B941CCD70B50001801F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF6D0B8E1CCD70B50001801F = {
+			isa = PBXGroup;
+			children = (
+				DF6D0B991CCD70B50001801F /* PlankTracker */,
+				DF6D0B981CCD70B50001801F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF6D0B981CCD70B50001801F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF6D0B971CCD70B50001801F /* PlankTracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF6D0B991CCD70B50001801F /* PlankTracker */ = {
+			isa = PBXGroup;
+			children = (
+				DF6D0B9D1CCD70B50001801F /* AppDelegate.h */,
+				DF6D0B9E1CCD70B50001801F /* AppDelegate.m */,
+				DF6D0BB71CCD75450001801F /* PTButtonView.h */,
+				DF6D0BB81CCD75450001801F /* PTButtonView.m */,
+				DF6D0BBD1CCD78A10001801F /* PTPlankRecord.h */,
+				DF6D0BBE1CCD78A10001801F /* PTPlankRecord.m */,
+				DF6D0BC01CCD79980001801F /* PTPlankRecordStore.h */,
+				DF6D0BC11CCD79980001801F /* PTPlankRecordStore.m */,
+				DF6D0BC31CCD7CC90001801F /* PTPlankUtils.h */,
+				DF6D0BC41CCD7CC90001801F /* PTPlankUtils.m */,
+				DF6D0BC61CCD9BCD0001801F /* PTRecordTableViewController.h */,
+				DF6D0BC71CCD9BCD0001801F /* PTRecordTableViewController.m */,
+				DF6D0BB41CCD71390001801F /* PTTimerViewController.h */,
+				DF6D0BB51CCD71390001801F /* PTTimerViewController.m */,
+				DF6D0BBA1CCD778B0001801F /* PTStopwatch.h */,
+				DF6D0BBB1CCD778B0001801F /* PTStopwatch.m */,
+				DF6D0BA31CCD70B50001801F /* SecondViewController.h */,
+				DF6D0BA41CCD70B50001801F /* SecondViewController.m */,
+				DF6D0BA61CCD70B50001801F /* Main.storyboard */,
+				DF6D0BA91CCD70B50001801F /* Assets.xcassets */,
+				DF6D0BAB1CCD70B50001801F /* LaunchScreen.storyboard */,
+				DF6D0BAE1CCD70B50001801F /* Info.plist */,
+				DF6D0B9A1CCD70B50001801F /* Supporting Files */,
+			);
+			path = PlankTracker;
+			sourceTree = "<group>";
+		};
+		DF6D0B9A1CCD70B50001801F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF6D0B9B1CCD70B50001801F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF6D0B961CCD70B50001801F /* PlankTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF6D0BB11CCD70B50001801F /* Build configuration list for PBXNativeTarget "PlankTracker" */;
+			buildPhases = (
+				DF6D0B931CCD70B50001801F /* Sources */,
+				DF6D0B941CCD70B50001801F /* Frameworks */,
+				DF6D0B951CCD70B50001801F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlankTracker;
+			productName = PlankTracker;
+			productReference = DF6D0B971CCD70B50001801F /* PlankTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF6D0B8F1CCD70B50001801F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Diana Fisher";
+				TargetAttributes = {
+					DF6D0B961CCD70B50001801F = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 98M3DR833J;
+					};
+				};
+			};
+			buildConfigurationList = DF6D0B921CCD70B50001801F /* Build configuration list for PBXProject "PlankTracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF6D0B8E1CCD70B50001801F;
+			productRefGroup = DF6D0B981CCD70B50001801F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF6D0B961CCD70B50001801F /* PlankTracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF6D0B951CCD70B50001801F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF6D0BAD1CCD70B50001801F /* LaunchScreen.storyboard in Resources */,
+				DF6D0BAA1CCD70B50001801F /* Assets.xcassets in Resources */,
+				DF6D0BA81CCD70B50001801F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF6D0B931CCD70B50001801F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF6D0BA51CCD70B50001801F /* SecondViewController.m in Sources */,
+				DF6D0BB61CCD71390001801F /* PTTimerViewController.m in Sources */,
+				DF6D0BB91CCD75450001801F /* PTButtonView.m in Sources */,
+				DF6D0B9F1CCD70B50001801F /* AppDelegate.m in Sources */,
+				DF6D0BC51CCD7CC90001801F /* PTPlankUtils.m in Sources */,
+				DF6D0B9C1CCD70B50001801F /* main.m in Sources */,
+				DF6D0BC81CCD9BCD0001801F /* PTRecordTableViewController.m in Sources */,
+				DF6D0BC21CCD79980001801F /* PTPlankRecordStore.m in Sources */,
+				DF6D0BBC1CCD778B0001801F /* PTStopwatch.m in Sources */,
+				DF6D0BBF1CCD78A10001801F /* PTPlankRecord.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DF6D0BA61CCD70B50001801F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF6D0BA71CCD70B50001801F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DF6D0BAB1CCD70B50001801F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF6D0BAC1CCD70B50001801F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DF6D0BAF1CCD70B50001801F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DF6D0BB01CCD70B50001801F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF6D0BB21CCD70B50001801F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PlankTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dianafisher.PlankTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DF6D0BB31CCD70B50001801F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PlankTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dianafisher.PlankTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF6D0B921CCD70B50001801F /* Build configuration list for PBXProject "PlankTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF6D0BAF1CCD70B50001801F /* Debug */,
+				DF6D0BB01CCD70B50001801F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF6D0BB11CCD70B50001801F /* Build configuration list for PBXNativeTarget "PlankTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF6D0BB21CCD70B50001801F /* Debug */,
+				DF6D0BB31CCD70B50001801F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF6D0B8F1CCD70B50001801F /* Project object */;
+}
