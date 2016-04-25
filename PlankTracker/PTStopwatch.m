@@ -20,13 +20,11 @@
 
 - (void)start
 {
-    NSLog(@"--- START ---");
     self.startTime = [NSDate date];  // current date and time.
 }
 
 - (void)stop
 {
-    NSLog(@"***- STOP ***-");
     self.startTime = nil;
     self.elapsedTime = 0;
 }
