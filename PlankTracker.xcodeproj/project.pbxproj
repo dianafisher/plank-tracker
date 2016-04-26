@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		DF6D0B9C1CCD70B50001801F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6D0B9B1CCD70B50001801F /* main.m */; };
 		DF6D0B9F1CCD70B50001801F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6D0B9E1CCD70B50001801F /* AppDelegate.m */; };
-		DF6D0BA51CCD70B50001801F /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6D0BA41CCD70B50001801F /* SecondViewController.m */; };
 		DF6D0BA81CCD70B50001801F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF6D0BA61CCD70B50001801F /* Main.storyboard */; };
 		DF6D0BAA1CCD70B50001801F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF6D0BA91CCD70B50001801F /* Assets.xcassets */; };
 		DF6D0BAD1CCD70B50001801F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF6D0BAB1CCD70B50001801F /* LaunchScreen.storyboard */; };
@@ -20,6 +19,7 @@
 		DF6D0BC21CCD79980001801F /* PTPlankRecordStore.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6D0BC11CCD79980001801F /* PTPlankRecordStore.m */; };
 		DF6D0BC51CCD7CC90001801F /* PTPlankUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6D0BC41CCD7CC90001801F /* PTPlankUtils.m */; };
 		DF6D0BC81CCD9BCD0001801F /* PTRecordTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6D0BC71CCD9BCD0001801F /* PTRecordTableViewController.m */; };
+		DF6D0BD11CCEF23B0001801F /* PTSettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6D0BD01CCEF23B0001801F /* PTSettingsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +27,6 @@
 		DF6D0B9B1CCD70B50001801F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DF6D0B9D1CCD70B50001801F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DF6D0B9E1CCD70B50001801F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DF6D0BA31CCD70B50001801F /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		DF6D0BA41CCD70B50001801F /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		DF6D0BA71CCD70B50001801F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DF6D0BA91CCD70B50001801F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF6D0BAC1CCD70B50001801F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +45,8 @@
 		DF6D0BC41CCD7CC90001801F /* PTPlankUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPlankUtils.m; sourceTree = "<group>"; };
 		DF6D0BC61CCD9BCD0001801F /* PTRecordTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTRecordTableViewController.h; sourceTree = "<group>"; };
 		DF6D0BC71CCD9BCD0001801F /* PTRecordTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTRecordTableViewController.m; sourceTree = "<group>"; };
+		DF6D0BCF1CCEF23B0001801F /* PTSettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTSettingsTableViewController.h; sourceTree = "<group>"; };
+		DF6D0BD01CCEF23B0001801F /* PTSettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTSettingsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,12 +91,12 @@
 				DF6D0BC41CCD7CC90001801F /* PTPlankUtils.m */,
 				DF6D0BC61CCD9BCD0001801F /* PTRecordTableViewController.h */,
 				DF6D0BC71CCD9BCD0001801F /* PTRecordTableViewController.m */,
-				DF6D0BB41CCD71390001801F /* PTTimerViewController.h */,
-				DF6D0BB51CCD71390001801F /* PTTimerViewController.m */,
+				DF6D0BCF1CCEF23B0001801F /* PTSettingsTableViewController.h */,
+				DF6D0BD01CCEF23B0001801F /* PTSettingsTableViewController.m */,
 				DF6D0BBA1CCD778B0001801F /* PTStopwatch.h */,
 				DF6D0BBB1CCD778B0001801F /* PTStopwatch.m */,
-				DF6D0BA31CCD70B50001801F /* SecondViewController.h */,
-				DF6D0BA41CCD70B50001801F /* SecondViewController.m */,
+				DF6D0BB41CCD71390001801F /* PTTimerViewController.h */,
+				DF6D0BB51CCD71390001801F /* PTTimerViewController.m */,
 				DF6D0BA61CCD70B50001801F /* Main.storyboard */,
 				DF6D0BA91CCD70B50001801F /* Assets.xcassets */,
 				DF6D0BAB1CCD70B50001801F /* LaunchScreen.storyboard */,
@@ -185,8 +185,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF6D0BA51CCD70B50001801F /* SecondViewController.m in Sources */,
 				DF6D0BB61CCD71390001801F /* PTTimerViewController.m in Sources */,
+				DF6D0BD11CCEF23B0001801F /* PTSettingsTableViewController.m in Sources */,
 				DF6D0BB91CCD75450001801F /* PTButtonView.m in Sources */,
 				DF6D0B9F1CCD70B50001801F /* AppDelegate.m in Sources */,
 				DF6D0BC51CCD7CC90001801F /* PTPlankUtils.m in Sources */,
@@ -343,6 +343,7 @@
 				DF6D0BB31CCD70B50001801F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

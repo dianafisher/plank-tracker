@@ -21,6 +21,7 @@
 
 @property (nonatomic, strong) PTStopwatch *stopwatch;
 @property (nonatomic, strong) NSArray *plankRecords;
+@property (nonatomic) BOOL announceTime;
 @property (nonatomic, strong) AVSpeechSynthesizer *synthesizer;
 
 @property (weak, nonatomic) IBOutlet UILabel *elapsedTimeLabel;
@@ -56,6 +57,10 @@ static void * contextForKVO = &contextForKVO;
         self.longestTimeLabel.text = [NSString stringWithFormat:@"Longest: %@", timeStr];
     }
     
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"AnnounceTimeOn"]) {
+        self.announceTime = YES;
+    }
+    
     // Observe when the seconds property changes on the PTStopwatch object.
     [self.stopwatch addObserver:self
                      forKeyPath:@"seconds"
@@ -67,6 +72,12 @@ static void * contextForKVO = &contextForKVO;
                      forKeyPath:@"minutes"
                         options:NSKeyValueObservingOptionNew
                         context:&contextForKVO];
+    
+    // Observe when the user changes the user defaults setting.
+    [[NSUserDefaults standardUserDefaults] addObserver:self
+                                            forKeyPath:@"AnnounceTimeOn"
+                                               options:NSKeyValueObservingOptionNew
+                                               context:&contextForKVO];
 }
 
 - (void)dealloc
@@ -74,6 +85,7 @@ static void * contextForKVO = &contextForKVO;
     // Remove KVO observers.
     [self.stopwatch removeObserver:self forKeyPath:@"seconds"];
     [self.stopwatch removeObserver:self forKeyPath:@"minutes"];
+    [[NSUserDefaults standardUserDefaults] removeObserver:self forKeyPath:@"AnnounceTimeOn"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -109,6 +121,11 @@ static void * contextForKVO = &contextForKVO;
                 [self speakTimeWithValue:minutes withUnit:@"minutes"];
             } else {
                 [self speakTimeWithValue:minutes withUnit:@"minute"];
+            }
+        } else if ([keyPath isEqualToString:@"AnnounceTimeOn"]) {
+            // The user has changed the setting, so update our property.
+            if ([[NSUserDefaults standardUserDefaults] boolForKey:@"AnnounceTimeOn"]) {
+                self.announceTime = YES;
             }
         }
     }
@@ -219,6 +236,11 @@ static void * contextForKVO = &contextForKVO;
 
 - (void)speakTimeWithValue:(NSInteger)value withUnit:(NSString *)unit
 {
+    // If the user has turned off time announcements, simply return.
+    if (self.announceTime == NO) {
+        return;
+    }
+    
     NSString *string = [NSString stringWithFormat:@"%lu %@", value, unit];
     
     AVSpeechUtterance *utterance = [[AVSpeechUtterance alloc] initWithString:string];

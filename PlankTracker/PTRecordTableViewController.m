@@ -40,9 +40,9 @@ static NSString * const RecordCellReuseIdentifier = @"RecordCell";
 {
     // Dequeue a reusable table view cell.
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:RecordCellReuseIdentifier];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:RecordCellReuseIdentifier];
-    }
+    
+    // Because the prototype cell was defined in a storyboard, the dequeueReusableCellWithIdentifier: method always returns a valid cell.
+    // So we don’t need to check the return value against nil and create a cell manually.
     
     // Get the record at this index.
     PTPlankRecord *record = [[[PTPlankRecordStore sharedStore] records] objectAtIndex:[indexPath row]];
