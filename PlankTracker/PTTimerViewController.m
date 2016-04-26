@@ -57,9 +57,7 @@ static void * contextForKVO = &contextForKVO;
         self.longestTimeLabel.text = [NSString stringWithFormat:@"Longest: %@", timeStr];
     }
     
-    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"AnnounceTimeOn"]) {
-        self.announceTime = YES;
-    }
+    self.announceTime = [[NSUserDefaults standardUserDefaults] boolForKey:@"AnnounceTimeOn"];
     
     // Observe when the seconds property changes on the PTStopwatch object.
     [self.stopwatch addObserver:self
@@ -124,9 +122,7 @@ static void * contextForKVO = &contextForKVO;
             }
         } else if ([keyPath isEqualToString:@"AnnounceTimeOn"]) {
             // The user has changed the setting, so update our property.
-            if ([[NSUserDefaults standardUserDefaults] boolForKey:@"AnnounceTimeOn"]) {
-                self.announceTime = YES;
-            }
+            self.announceTime = [[NSUserDefaults standardUserDefaults] boolForKey:@"AnnounceTimeOn"];
         }
     }
 }
